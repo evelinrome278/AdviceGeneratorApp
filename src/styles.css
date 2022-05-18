@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background: var(--darkBlue);
+}
+
+body blockquote {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  color: var(--lightCyan);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 25rem;
+  height: 18rem;
+  border-radius: 10px;
+  background: var(--darkGrayishBlue);
+}
+
+.card > p {
+  font-size: 11px;
+  text-align: center;
+  color: var(--neonGreen);
+  padding-top: 2rem;
+}
+.divider {
+  width: 80%;
+  position: sticky;
+  padding-left: 2.3rem;
+}
+
+.button_circle {
+  position: fixed;
+  top: 17rem;
+  width: 3rem;
+  height: 3rem;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: var(--neonGreen);
+  cursor: pointer;
+}
+
+.button_circle:hover {
+  box-shadow: 0 0 50px var(--neonGreen);
+}
+
+.button_circle img {
+  padding: 0.7rem;
+}
